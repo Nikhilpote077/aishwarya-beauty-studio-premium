@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aishwarya-beauty-studio-premium.netlify.app/sitemap.xml
