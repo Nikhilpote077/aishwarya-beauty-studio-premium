@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="gcli3" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(315 0.5 0.5)">
+      <stop offset="0%" stop-color="#c9a227"/>
+      <stop offset="100%" stop-color="#a5811a"/>
+    </linearGradient>
+    <pattern id="dotscli3" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#14120f" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="200" height="200" fill="url(#gcli3)"/>
+  <rect width="200" height="200" fill="url(#dotscli3)"/>
+  <rect x="0" y="0" width="200" height="200" fill="none" stroke="#14120f" stroke-opacity="0.25" stroke-width="1"/>
+  <g transform="translate(100.0,82.0)" fill="none" stroke="#14120f" stroke-width="1.6" opacity="0.85">
+    <path d="M0,-18 L4.7,-6.5 17,-5.5 7.8,2.5 10.5,15 0,8 -10.5,15 -7.8,2.5 -17,-5.5 -4.7,-6.5 Z"/>
+  </g>
+  <text x="100.0" y="146.0" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f8f5ef" opacity="0.92" letter-spacing="1">AK</text>
+  <text x="100.0" y="168.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#14120f" opacity="0.8" letter-spacing="3">AISHWARYA POTE</text>
+</svg>

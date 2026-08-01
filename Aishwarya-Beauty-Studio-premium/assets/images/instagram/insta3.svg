@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="gig2" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(200 0.5 0.5)">
+      <stop offset="0%" stop-color="#14120f"/>
+      <stop offset="100%" stop-color="#211d18"/>
+    </linearGradient>
+    <pattern id="dotsig2" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#c9a227" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="500" height="500" fill="url(#gig2)"/>
+  <rect width="500" height="500" fill="url(#dotsig2)"/>
+  <rect x="0" y="0" width="500" height="500" fill="none" stroke="#c9a227" stroke-opacity="0.25" stroke-width="1"/>
+  <g transform="translate(250.0,232.0)" fill="none" stroke="#c9a227" stroke-width="1.6" opacity="0.85">
+    <path d="M-20,10 L-16,-8 -7,2 0,-14 7,2 16,-8 20,10 Z"/><line x1="-20" y1="10" x2="20" y2="10"/>
+  </g>
+  <text x="250.0" y="296.0" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#f8f5ef" opacity="0.92" letter-spacing="1">@mua_aishwarya</text>
+  <text x="250.0" y="318.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#c9a227" opacity="0.8" letter-spacing="3">AISHWARYA POTE</text>
+</svg>

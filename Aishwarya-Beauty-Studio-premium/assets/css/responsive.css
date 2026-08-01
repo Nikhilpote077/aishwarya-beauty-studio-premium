@@ -1,0 +1,210 @@
+/* ===========================================================
+   RESPONSIVE BREAKPOINTS
+   Mobile-first adjustments layered on top of style.css.
+   Bootstrap's grid handles column stacking; this file handles
+   everything Bootstrap doesn't: font scale, spacing rhythm,
+   and component-specific tweaks per breakpoint.
+=========================================================== */
+
+/* ---------- ≤ 1199px (large tablets / small laptops) ---------- */
+@media (max-width: 1199.98px) {
+  .hero-stats {
+    gap: 34px;
+  }
+
+  .about-media-badge {
+    right: 0;
+  }
+}
+
+/* ---------- ≤ 991px (tablets) ---------- */
+@media (max-width: 991.98px) {
+  section {
+    padding: var(--space-xl) 0;
+  }
+
+  .hero {
+    min-height: 92vh;
+  }
+
+  .hero-media {
+    background-position: 65% center;
+  }
+
+  .about-media img {
+    height: 420px;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .service-feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 30px;
+  }
+
+  .footer {
+    padding-top: 64px;
+  }
+
+  .footer .col-lg-2,
+  .footer .col-lg-3 {
+    margin-top: 12px;
+  }
+}
+
+/* ---------- ≤ 767px (mobile landscape / small tablets) ---------- */
+@media (max-width: 767.98px) {
+  .container {
+    width: 92%;
+  }
+
+  section {
+    padding: var(--space-lg) 0;
+  }
+
+  .hero {
+    min-height: 88vh;
+    text-align: left;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: 26px;
+    margin-top: 38px;
+  }
+
+  .hero-stats h3 {
+    font-size: 1.9rem;
+  }
+
+  .about-media-badge {
+    position: static;
+    margin-top: -40px;
+    margin-left: 20px;
+    display: inline-block;
+  }
+
+  .service-card-media {
+    height: 220px;
+  }
+
+  .gallery-img {
+    height: 260px;
+  }
+
+  .instagram-img {
+    height: 200px;
+  }
+
+  .contact-card {
+    padding: 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-hero {
+    min-height: 38vh;
+  }
+
+  .service-detail-media img {
+    height: 280px;
+    margin-bottom: 24px;
+  }
+
+  .timeline {
+    padding-left: 32px;
+  }
+
+  .timeline-item::before {
+    left: -32px;
+  }
+}
+
+/* ---------- ≤ 575px (mobile portrait) ---------- */
+@media (max-width: 575.98px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+  }
+
+  .trust-badge span {
+    font-size: 0.78rem;
+    padding: 8px 14px;
+  }
+
+  .about-stats-row,
+  .about-highlights {
+    gap: 18px;
+  }
+
+  .why-card,
+  .testimonial-card {
+    padding: 28px 22px;
+  }
+
+  .course-card {
+    padding: 26px;
+  }
+
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .back-to-top {
+    right: 18px;
+    bottom: 82px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .loader-content h1 {
+    font-size: 54px;
+  }
+}
+
+/* ---------- Landscape phones (short viewport height) ---------- */
+@media (max-height: 480px) and (orientation: landscape) {
+  .hero,
+  .page-hero {
+    min-height: auto;
+    padding: 120px 0 60px;
+  }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  .custom-navbar,
+  .whatsapp-float,
+  .back-to-top,
+  #loader,
+  .progress-bar-scroll {
+    display: none !important;
+  }
+}

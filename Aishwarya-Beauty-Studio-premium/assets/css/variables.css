@@ -1,0 +1,67 @@
+/* ===========================================================
+   DESIGN TOKENS — Aishwarya Beauty Studio
+   Single source of truth for the visual language.
+   Change a value here and it ripples across the entire site.
+=========================================================== */
+
+:root {
+  /* ---------- Brand colors ---------- */
+  --primary: #c9a227;          /* signature gold */
+  --primary-light: #e6c866;
+  --primary-dark: #a5811a;
+  --primary-gradient: linear-gradient(135deg, #d4af37 0%, #c9a227 45%, #a5811a 100%);
+
+  --dark: #14120f;             /* near-black, warmer than pure black */
+  --dark-soft: #211d18;
+  --secondary: #f8f5ef;        /* warm ivory */
+  --cream: #faf7f1;
+  --white: #ffffff;
+
+  --text: #5c564c;             /* body copy — warm gray, not cold #666 */
+  --text-light: #8a8378;
+  --text-on-dark: #e9e4d8;
+
+  --border: #ece6d8;
+  --success: #2e7d4f;
+  --error: #b3392c;
+
+  /* ---------- Elevation (shadows) ---------- */
+  --shadow-sm: 0 4px 14px rgba(20, 18, 15, 0.06);
+  --shadow-md: 0 15px 40px rgba(20, 18, 15, 0.08);
+  --shadow-lg: 0 25px 60px rgba(20, 18, 15, 0.14);
+  --shadow-gold: 0 15px 35px rgba(201, 162, 39, 0.28);
+
+  /* ---------- Radii ---------- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* ---------- Spacing scale ---------- */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 64px;
+  --space-2xl: 100px;
+
+  /* ---------- Typography ---------- */
+  --font-display: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+
+  --fs-hero: clamp(2.4rem, 5vw, 4.5rem);
+  --fs-h2: clamp(1.9rem, 3.2vw, 3rem);
+  --fs-h3: clamp(1.3rem, 2vw, 1.75rem);
+  --fs-body: 1rem;
+  --fs-sm: 0.875rem;
+
+  /* ---------- Motion ---------- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 0.25s var(--ease);
+  --transition: 0.4s var(--ease);
+  --transition-slow: 0.7s var(--ease);
+
+  /* ---------- Layout ---------- */
+  --container-width: 1240px;
+  --header-height: 84px;
+}
