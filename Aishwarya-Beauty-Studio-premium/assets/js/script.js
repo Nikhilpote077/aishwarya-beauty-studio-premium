@@ -18,12 +18,14 @@
       const isOpen = item.classList.contains("open");
 
       // Close any sibling FAQs in the same list for a clean accordion feel
-      item.parentElement.querySelectorAll(".faq-item.open").forEach((openItem) => {
-        if (openItem !== item) {
-          openItem.classList.remove("open");
-          openItem.querySelector(".faq-answer").style.maxHeight = null;
-        }
-      });
+      item.parentElement
+        .querySelectorAll(".faq-item.open")
+        .forEach((openItem) => {
+          if (openItem !== item) {
+            openItem.classList.remove("open");
+            openItem.querySelector(".faq-answer").style.maxHeight = null;
+          }
+        });
 
       item.classList.toggle("open", !isOpen);
       answer.style.maxHeight = !isOpen ? answer.scrollHeight + "px" : null;
@@ -38,7 +40,7 @@
   // NOTE: the very first submission ever sent to this address triggers a
   // one-time confirmation email from FormSubmit — it must be clicked once
   // to activate delivery. After that, every submission arrives normally.
-  const FORM_ENDPOINT = "https://formsubmit.co/ajax/potenikhil77@gmail.com";
+  const FORM_ENDPOINT = "https://formsubmit.co/ajax/aishwaryapote70@gmail.com";
 
   const successBox = form.parentElement.querySelector(".form-success");
   let errorBox = form.parentElement.querySelector(".form-error-global");
@@ -52,7 +54,8 @@
   const validators = {
     name: (v) => v.trim().length >= 2,
     phone: (v) => /^[0-9+\-\s()]{7,15}$/.test(v.trim()),
-    email: (v) => v.trim() === "" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()),
+    email: (v) =>
+      v.trim() === "" || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()),
     service: (v) => v !== "" && v !== "Select Service",
     message: (v) => v.trim().length >= 10,
   };
@@ -80,9 +83,11 @@
     e.preventDefault();
 
     let isValid = true;
-    form.querySelectorAll("input[name], select[name], textarea[name]").forEach((field) => {
-      if (!validateField(field)) isValid = false;
-    });
+    form
+      .querySelectorAll("input[name], select[name], textarea[name]")
+      .forEach((field) => {
+        if (!validateField(field)) isValid = false;
+      });
 
     if (!isValid) {
       const firstInvalid = form.querySelector(".is-invalid");
@@ -100,7 +105,10 @@
 
     fetch(FORM_ENDPOINT, {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
       body: JSON.stringify(payload),
     })
       .then((res) => {
@@ -109,7 +117,9 @@
       })
       .then(() => {
         form.reset();
-        form.querySelectorAll(".is-invalid").forEach((el) => el.classList.remove("is-invalid"));
+        form
+          .querySelectorAll(".is-invalid")
+          .forEach((el) => el.classList.remove("is-invalid"));
         successBox.classList.add("show");
         successBox.setAttribute("role", "status");
         successBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
