@@ -70,7 +70,12 @@ button {
   font-family: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   color: var(--dark);
   line-height: 1.25;
@@ -186,7 +191,11 @@ section {
   border-radius: var(--radius-pill);
   border: none;
   cursor: pointer;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background var(--transition-fast),
+    color var(--transition-fast);
   white-space: nowrap;
 }
 
@@ -255,7 +264,10 @@ section {
   padding: 22px 0;
   background: transparent;
   backdrop-filter: blur(0);
-  transition: background var(--transition), padding var(--transition), box-shadow var(--transition);
+  transition:
+    background var(--transition),
+    padding var(--transition),
+    box-shadow var(--transition);
 }
 
 .custom-navbar::before {
@@ -390,7 +402,9 @@ section {
   justify-content: center;
   align-items: center;
   z-index: 99999;
-  transition: opacity 0.6s var(--ease), visibility 0.6s var(--ease);
+  transition:
+    opacity 0.6s var(--ease),
+    visibility 0.6s var(--ease);
 }
 
 .loader-content {
@@ -429,8 +443,12 @@ section {
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .loader-hide {
@@ -463,21 +481,30 @@ section {
 .hero-media {
   position: absolute;
   inset: 0;
-  background: url("../images/hero/hero.jpg") center 20%/cover no-repeat;
+  background: url("../images/hero/hero.jpeg") center 20% / cover no-repeat;
   transform: scale(1.08);
   animation: heroZoom 18s ease-in-out infinite alternate;
 }
 
 @keyframes heroZoom {
-  from { transform: scale(1.08); }
-  to { transform: scale(1); }
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(10, 9, 7, 0.88) 0%, rgba(10, 9, 7, 0.55) 55%, rgba(10, 9, 7, 0.3) 100%),
+    linear-gradient(
+      90deg,
+      rgba(10, 9, 7, 0.88) 0%,
+      rgba(10, 9, 7, 0.55) 55%,
+      rgba(10, 9, 7, 0.3) 100%
+    ),
     linear-gradient(0deg, rgba(10, 9, 7, 0.5), transparent 40%);
 }
 
@@ -608,9 +635,17 @@ section {
 }
 
 @keyframes scrollDot {
-  0% { opacity: 0; transform: translateY(-6px); }
-  50% { opacity: 1; }
-  100% { opacity: 0; transform: translateY(10px); }
+  0% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
 
 /* ---------- 8. About ---------- */
@@ -713,7 +748,9 @@ section {
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -806,7 +843,11 @@ section {
 .gallery-item-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(20, 18, 15, 0.75) 0%, rgba(20, 18, 15, 0) 55%);
+  background: linear-gradient(
+    0deg,
+    rgba(20, 18, 15, 0.75) 0%,
+    rgba(20, 18, 15, 0) 55%
+  );
   display: flex;
   align-items: flex-end;
   padding: 20px;
@@ -838,7 +879,9 @@ section {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--transition), visibility var(--transition);
+  transition:
+    opacity var(--transition),
+    visibility var(--transition);
 }
 
 .lightbox.active {
@@ -939,7 +982,11 @@ section {
   width: 62px;
   height: 62px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(201, 162, 39, 0.14), rgba(201, 162, 39, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(201, 162, 39, 0.14),
+    rgba(201, 162, 39, 0.05)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1098,7 +1145,11 @@ section {
   height: 46px;
   min-width: 46px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(201, 162, 39, 0.14), rgba(201, 162, 39, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(201, 162, 39, 0.14),
+    rgba(201, 162, 39, 0.05)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1337,9 +1388,15 @@ section {
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
-  70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
 }
 
 /* Back to top */
@@ -1395,7 +1452,11 @@ section {
 .page-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10, 9, 7, 0.75), rgba(10, 9, 7, 0.92));
+  background: linear-gradient(
+    180deg,
+    rgba(10, 9, 7, 0.75),
+    rgba(10, 9, 7, 0.92)
+  );
 }
 
 .page-hero .container {
@@ -1748,7 +1809,9 @@ section {
 .fade-up {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  transition:
+    opacity 0.7s var(--ease),
+    transform 0.7s var(--ease);
 }
 
 .fade-up.in-view {
@@ -1772,7 +1835,11 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(201, 162, 39, 0.16), rgba(20, 18, 15, 0.08));
+  background: linear-gradient(
+    160deg,
+    rgba(201, 162, 39, 0.16),
+    rgba(20, 18, 15, 0.08)
+  );
   pointer-events: none;
 }
 

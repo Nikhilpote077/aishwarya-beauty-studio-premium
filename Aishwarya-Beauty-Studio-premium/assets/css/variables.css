@@ -6,18 +6,23 @@
 
 :root {
   /* ---------- Brand colors ---------- */
-  --primary: #c9a227;          /* signature gold */
+  --primary: #c9a227; /* signature gold */
   --primary-light: #e6c866;
   --primary-dark: #a5811a;
-  --primary-gradient: linear-gradient(135deg, #d4af37 0%, #c9a227 45%, #a5811a 100%);
+  --primary-gradient: linear-gradient(
+    135deg,
+    #d4af37 0%,
+    #c9a227 45%,
+    #a5811a 100%
+  );
 
-  --dark: #14120f;             /* near-black, warmer than pure black */
+  --dark: #14120f; /* near-black, warmer than pure black */
   --dark-soft: #211d18;
-  --secondary: #f8f5ef;        /* warm ivory */
+  --secondary: #f8f5ef; /* warm ivory */
   --cream: #faf7f1;
   --white: #ffffff;
 
-  --text: #5c564c;             /* body copy — warm gray, not cold #666 */
+  --text: #5c564c; /* body copy — warm gray, not cold #666 */
   --text-light: #8a8378;
   --text-on-dark: #e9e4d8;
 
