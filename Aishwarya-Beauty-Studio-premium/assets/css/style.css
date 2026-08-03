@@ -481,7 +481,7 @@ section {
 .hero-media {
   position: absolute;
   inset: 0;
-  background: url("../images/hero/hero.jpeg") center 20% / cover no-repeat;
+  background: url("../images/hero/hero.JPEG") center 20% / cover no-repeat;
   transform: scale(1.08);
   animation: heroZoom 18s ease-in-out infinite alternate;
 }
