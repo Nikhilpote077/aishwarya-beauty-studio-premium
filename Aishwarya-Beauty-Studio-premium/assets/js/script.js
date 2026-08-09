@@ -32,7 +32,7 @@
     });
   });
   /* ---- Hero statistics counter ---- */
-  document.querySelectorAll(".counter+").forEach((counter) => {
+  document.querySelectorAll(".counter").forEach((counter) => {
     const target = Number(counter.dataset.target);
     const suffix = counter.dataset.suffix || "";
 
