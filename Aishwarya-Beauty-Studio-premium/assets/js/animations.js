@@ -29,7 +29,8 @@
     const updateProgress = () => {
       const scrollTop = document.documentElement.scrollTop;
       const scrollHeight =
-        document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
       const percent = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
       progressBar.style.width = percent + "%";
     };
@@ -42,20 +43,23 @@
   if (counters.length) {
     const animateCounter = (el) => {
       const target = +el.dataset.target;
-      const duration = 1400; // ms
+      const duration = 1400;
       const start = performance.now();
 
       const tick = (now) => {
         const progress = Math.min((now - start) / duration, 1);
-        // ease-out for a nicer finish
+
         const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.floor(eased * target);
+
+        el.textContent = Math.floor(eased * target) + (el.dataset.suffix || "");
+
         if (progress < 1) {
           requestAnimationFrame(tick);
         } else {
-          el.textContent = target;
+          el.textContent = target + (el.dataset.suffix || "");
         }
       };
+
       requestAnimationFrame(tick);
     };
 
@@ -68,7 +72,7 @@
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
 
     counters.forEach((counter) => counterObserver.observe(counter));
@@ -86,7 +90,7 @@
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     );
     revealEls.forEach((el) => revealObserver.observe(el));
   } else {
@@ -101,7 +105,7 @@
       () => {
         backToTop.classList.toggle("show", window.scrollY > 500);
       },
-      { passive: true }
+      { passive: true },
     );
     backToTop.addEventListener("click", (e) => {
       e.preventDefault();
