@@ -31,7 +31,29 @@
       answer.style.maxHeight = !isOpen ? answer.scrollHeight + "px" : null;
     });
   });
+  /* ---- Hero statistics counter ---- */
+  document.querySelectorAll(".counter").forEach((counter) => {
+    const target = Number(counter.dataset.target);
+    const suffix = counter.dataset.suffix || "";
 
+    let current = 0;
+    const duration = 1500;
+    const increment = target / (duration / 16);
+
+    const updateCounter = () => {
+      current += increment;
+
+      if (current >= target) {
+        counter.textContent = target + suffix;
+        return;
+      }
+
+      counter.textContent = Math.floor(current) + suffix;
+      requestAnimationFrame(updateCounter);
+    };
+
+    updateCounter();
+  });
   /* ---- Booking / contact form validation + submission ---- */
   const form = document.getElementById("bookingForm");
   if (!form) return;
