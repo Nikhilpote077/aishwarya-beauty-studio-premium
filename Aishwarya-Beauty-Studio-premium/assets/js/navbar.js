@@ -35,28 +35,6 @@
       });
     });
   }
-
-  // Highlight the current page in the nav
-  // Highlight the current page in the nav
-  const currentPath = window.location.pathname;
-  let currentPage = currentPath.split("/").pop();
-
-  // If the URL ends with "/" treat it as the home page
-  if (!currentPage || currentPage === "") {
-    currentPage = "index.html";
-  }
-
-  // Remove active from all navigation links first
-  document.querySelectorAll(".nav-link[data-page]").forEach((link) => {
-    link.classList.remove("active");
-  });
-
-  // Add active only to the current page
-  const currentLink = document.querySelector(
-    `.nav-link[data-page="${currentPage}"]`,
-  );
-
-  if (currentLink) {
-    currentLink.classList.add("active");
-  }
+  // Active navigation is controlled by each page's HTML.
+  // No JavaScript needed here.
 })();

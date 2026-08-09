@@ -335,7 +335,8 @@ section {
 }
 
 .nav-link:hover::after,
-.nav-link.active::after {
+.nav-link.active::after,
+.nav-link.active:hover::after {
   transform: scaleX(1);
 }
 
