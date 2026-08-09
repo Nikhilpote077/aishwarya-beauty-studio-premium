@@ -27,10 +27,12 @@
     min-height: 92vh;
   }
 
-  .hero-media {
+  /* .hero-media {
     background-position: 65% center;
-  }
-
+  } */
+.hero-media {
+  background-position: 50% center;
+}
   .about-media img {
     height: 420px;
   }
